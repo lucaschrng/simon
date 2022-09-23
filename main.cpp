@@ -19,6 +19,8 @@ void setup() {
 	pinMode(3, INPUT);
 	pinMode(4, INPUT);
 	pinMode(5, INPUT);
+	pinMode(6, OUTPUT);
+	pinMode(7, OUTPUT);
 	pinMode(13, OUTPUT);
 	pinMode(12, OUTPUT);
 	pinMode(11, OUTPUT);
@@ -29,11 +31,12 @@ void setup() {
 void GamePlay(){
 
     HowMany+=1;
+	// on arrete d'accelerer le delai quand sa devient trop rapide
 	if (speed > 100)
 	{
 		speed -= 50;
 	}
-	//on genere aleatoirement une nouvelle couleur 
+//on genere aleatoirement une nouvelle couleur 
     int RandomIndex=rand()%4;
     int couleur=arrayCouleur[RandomIndex];
     AlreadyDid[HowMany]=couleur;
