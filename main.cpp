@@ -2,6 +2,7 @@
 #include <time.h>
 
 // jaune 10 rouge 11 vert 12 bleu 13
+// Liste pour les leds, les boutons et les notes de musique
 char arrayCouleur[]={10,11,12,13};
 char arrayBoutons[]={0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 4, 5};
 int notes []={ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 880, 831, 659, 622};
@@ -26,7 +27,7 @@ void setup() {
 	pinMode(10, OUTPUT);
   	pinMode(9, OUTPUT);
 }
-
+// Boucle de Gameplay principal, a chaque tour on allume une nouvelle Led
 void GamePlay(){
 
     HowMany+=1;
@@ -34,11 +35,11 @@ void GamePlay(){
 	{
 		speed -= 50;
 	}
-
+	//on genere aleatoirement une nouvelle couleur 
     int RandomIndex=rand()%4;
     int couleur=arrayCouleur[RandomIndex];
     AlreadyDid[HowMany]=couleur;
-
+// on allume chaque lampe pour faire le pattern en ajoutant une nouvelle a chaque fois, le speed augmente a chaque tour
     for (int b = 0; b < HowMany; b++)
     {
 		
@@ -50,7 +51,7 @@ void GamePlay(){
       lastIndex=b;
     }
 }
-
+// On verifie si les inputs bouttons sont corrects,dans le bonne ordre et avec une limite de temp
 void gameVerify(){
 	for (int i = 0; i < HowMany; i++)
 	{
