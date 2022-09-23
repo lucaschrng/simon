@@ -5,9 +5,11 @@
 
 [Lien de la vidéo Youtube](https://youtu.be/6phwVDBONdY)
 
-# Schéma
-
+# Schémas
+### Schéma de l'arduino uno
 ![image](./schémaSimon.png)
+### Schéma de microéléctronique
+![image](./schemaSimon2.png)
 
 # Explication 
 * chaque bouton est relié à une pin en mode INPUT, ce qui nous permettra de récupérer l'état du bouton
