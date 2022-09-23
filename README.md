@@ -4,6 +4,8 @@
 
 # Schéma
 
+![image](./schémaSimon.png)
+
 # Explication 
 
 
