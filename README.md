@@ -12,7 +12,7 @@
 # Explication 
 * chaque bouton est relié à une pin en mode INPUT, ce qui nous permettra de récupérer l'état du bouton
 * chaque led est reliée à une pin en mode OUTPUT, ce qui permettra de l'allumer en envoyant du courant dans le pin
-* un buzzer est relié à une pin en mode OUTPUT, ce qui permettra d'emmettre un son en envoyant du curant dans le pin
+* un buzzer est relié à une pin en mode OUTPUT, ce qui permettra d'emmettre un son en envoyant du courant dans le pin
 
 ## Le code 
 
