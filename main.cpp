@@ -57,12 +57,13 @@ void gameVerify(){
 		if (isWinning)
 		{
 			bool isLosing = true;
-			for (int j = 0; j < 100; j++)
+			for (int j = 0; j < 4000; j++)
 			{
+				delay(1);
 				if (digitalRead(arrayBoutons[AlreadyDid[i]])){
 					isLosing = false;
 					digitalWrite(AlreadyDid[i], HIGH);
-          			tone(9, notes[AlreadyDid[i]], 200);
+          				tone(9, notes[AlreadyDid[i]], 200);
 					delay(200);
 					digitalWrite(AlreadyDid[i], LOW);
 					j = 4001;
@@ -83,8 +84,8 @@ void gameVerify(){
 				
 			}
 		if(isLosing){
-				isWinning = false;
-        tone(9, 432, 500);
+			isWinning = false;
+        		tone(9, 432, 500);
 			}
 		}
 		
