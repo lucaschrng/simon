@@ -11,7 +11,8 @@
 
 # Explication 
 
-
+## Le code 
+Nous avons deux fonctions principale : GameVerify et GameLoop
 
 
 
